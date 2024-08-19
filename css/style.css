@@ -1,9 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+
+/* Styles pour les titres */
+h1, h2 {
+  margin: 0;
+}
+
+
+h1 {
+  color: #00204a;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+:root {
+          --main-bg-color: #ffffff;
+          --main-text-color: #0c0c0c;
+          --highlight-color: #161616;
+          --primary-color: #00204a;
+          --accent-color: #092975;
+          --event-bg-color: #ffffff;
+      }
+
+      .container2 {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: 100vh;
+          background-color: var(--main-bg-color);
+          color: var(--main-text-color);
+          padding-top: 20px; /* Add some top padding for spacing */
+      }
+
+      .main-content2 {
+          width: 60%;
+          padding: 20px;
+          background-color: #f0f0f0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          border-radius: 8px;
+      }
+
+      .main-content2 h1 {
+          color: var(--primary-color);
+          font-size: 2em;
+          margin-bottom: 20px;
+      }
+
+      .main-content2 p {
+          font-size: 1em;
+          line-height: 1.6;
+      }
+
+      .mamme {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          /* background-color: var(--main-bg-color); */
+          color: var(--main-text-color);
+          margin: 0;
+          padding: 0;
+      }
+
+      .timeline {
+          width: 60%;
+          padding: 20px;
+          border-left: 10px solid var(--highlight-color);
+          background-color: var(--event-bg-color);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .timeline h1 {
+          color: var(--primary-color);
+          font-size: 2em;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .event {
+          margin-bottom: 40px;
+          position: relative;
+          padding-left: 40px;
+      }
+
+      .event:before {
+          content: attr(data-number);
+          position: absolute;
+          left: -37px;
+          top: 0;
+          background-color: var(--accent-color);
+          color: var(--main-bg-color);
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2em;
+      }
+
+      .event h2 {
+          color: var(--primary-color);
+          margin-bottom: 5px;
+      }
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  justify-content: center;
+
 }
 
 .layout_padding {

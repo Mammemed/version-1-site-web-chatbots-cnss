@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+  
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -32,10 +32,34 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <df-messenger
+    project-id="cnss-chatbot"
+    agent-id="ce8f060d-c87b-424a-a490-78961dad1f02"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+     chat-title="ChatBot">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 5px;
+      right: 5px;
+    }
+  </style>
 </head>
-
 <body class="sub_page">
-
   <div class="hero_area">
 
     <div class="hero_bg_box">
@@ -43,14 +67,14 @@
         <img src="images/hero-bg.png" alt="">
       </div>
     </div>
-
+    
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Finexo
+              CNSS Chatbots
             </span>
           </a>
 
@@ -64,25 +88,25 @@
                 <a class="nav-link" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html"> Methodes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service.html">Outils</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="why.html">Why Us</a>
+                <a class="nav-link" href="why.html">Types</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="team.html">Team <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="team.html">Étapes <span class="sr-only">(current)</span> </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-              </form>
+              </form> -->
             </ul>
           </div>
         </nav>
@@ -96,8 +120,10 @@
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2 class="">
-          Our <span> Team</span>
+          Les <span> Étapes</span>
         </h2>
+        <p>La création d'un chatbot implique plusieurs étapes distinctes, de la conception à la mise en œuvre.
+        </p>
       </div>
 
       <div class="team_container">
@@ -105,17 +131,19 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
+                <img src="images/search.png" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Joseph Brown
+                    Définition des objectifs
+
                 </h5>
                 <p>
-                  Marketing Head
+                    Déterminez les objectifs du chatbot et les types de tâches qu'il doit accomplir.
                 </p>
               </div>
-              <div class="social_box">
+              
+              <!-- <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -131,23 +159,24 @@
                 <a href="#">
                   <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
+                <img src="images/hand.png" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Nancy White
+                Choix des outils  
                 </h5>
                 <p>
-                  Marketing Head
+                Sélectionnez une plateforme ou framework de chatbot adaptée à vos besoins et à votre budget.
+
                 </p>
               </div>
-              <div class="social_box">
+              <!-- <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -163,23 +192,25 @@
                 <a href="#">
                   <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
+                <img src="images/coding.png" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Earl Martinez
+                    Développement du chatbot
+
                 </h5>
                 <p>
-                  Marketing Head
+                    Créez le chatbot en utilisant les outils et technologies appropriés.
+
                 </p>
               </div>
-              <div class="social_box">
+              <!-- <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -195,22 +226,22 @@
                 <a href="#">
                   <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
+                <img src="images/launch.png" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Josephine Allard
+                    Test et déploiement
                 </h5>
                 <p>
-                  Marketing Head
+                    Testez le chatbot pour vous assurer qu'il fonctionne correctement et déployez-le sur votre site web .
                 </p>
-              </div>
+              <!-- </div>
               <div class="social_box">
                 <a href="#">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -227,7 +258,7 @@
                 <a href="#">
                   <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -256,18 +287,18 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +222 36945155
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  mammemouhamed68@gmail.com
                 </span>
               </a>
             </div>
           </div>
-          <div class="info_social">
+          <!-- <div class="info_social">
             <a href="">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
@@ -280,9 +311,9 @@
             <a href="">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-          </div>
+          </div> -->
         </div>
-        <div class="col-md-6 col-lg-3 info_col">
+        <!-- <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
             <h4>
               Info
@@ -291,46 +322,35 @@
               necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
             </p>
           </div>
-        </div>
+        </div> -->
         <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
+            <div class="info_link_box">
+              <h4>
+                Liens
+              </h4>
+              <div class="info_links">
+                <a class="active" href="index.html">
+                  Accueil
+                </a>
+                <a class="" href="about.html">
+                  Methodes
+                </a>
+                <a class="" href="service.html">
+                  Outils
+                </a>
+                <a class="" href="why.html">
+                  Types
+                </a>
+                <a class="" href="team.html">
+                  Étapes
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
         </div>
       </div>
     </div>
   </section>
-
   <!-- end info section -->
 
   <!-- footer section -->

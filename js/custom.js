@@ -13,12 +13,6 @@ document.getElementById('scrollRight').addEventListener('click', function() {
 });
 
 
-
-
-
-
-
-
 // to get current year
 function getYear() {
     var currentDate = new Date();
@@ -65,55 +59,3 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const items = document.querySelectorAll('.carousel .carousel-item');
-// let currentItem = 0;
-// const totalItems = items.length;
-// const nextBtn = document.querySelector('.carousel-control-next');
-// const prevBtn = document.querySelector('.carousel-control-prev');
-
-// function updateCarousel() {
-//   items.forEach((item, index) => {
-//     if (index === currentItem) {
-//       item.classList.add('active');
-//       item.classList.remove('carousel-item-next', 'carousel-item-prev');
-//     } else if (index === (currentItem - 1 + totalItems) % totalItems) {
-//       item.classList.add('carousel-item-prev');
-//       item.classList.remove('active', 'carousel-item-next');
-//     } else if (index === (currentItem + 1) % totalItems) {
-//       item.classList.add('carousel-item-next');
-//       item.classList.remove('active', 'carousel-item-prev');
-//     } else {
-//       item.classList.remove('active', 'carousel-item-next', 'carousel-item-prev');
-//     }
-//   });
-// }
-
-// nextBtn.addEventListener('click', () => {
-//   currentItem = (currentItem + 1) % totalItems;
-//   updateCarousel();
-// });
-
-// prevBtn.addEventListener('click', () => {
-//   currentItem = (currentItem - 1 + totalItems) % totalItems;
-//   updateCarousel();
-// });
-
-// updateCarousel();
-
-
-
